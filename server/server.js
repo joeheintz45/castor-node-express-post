@@ -18,6 +18,19 @@ const peopleList = [
   },
 ];
 
+// GET > POST > GET
+
+// SAVE DATA
+app.post('/people', (req, res) => {
+  // what happens here?????
+  console.log(req.body);
+  res.sendStatus(201); // 201 = created
+  // 200 = OK
+  // 201 = Created
+  // 404 = not found
+  // 500 = Internal Sever Error
+});
+
 app.get('/people/last', (req, res) => {
   res.send(peopleList[peopleList.length - 1]);
 });
