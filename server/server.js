@@ -49,7 +49,7 @@ app.get('/people', (req, res) => {
   res.send(peopleList);
 });
 
-app.use(express.static('server/public'));
+app.use(express.static('public'));
 
 app.listen(PORT, function () {
   console.log('Listening on PORT: ', PORT);

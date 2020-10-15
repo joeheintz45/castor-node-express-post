@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/client.js" type="text/javascript"></script>
 
     <title>Postman</title>
@@ -13,5 +14,18 @@
     <header>
       <h1>Things Are Happening</h1>
     </header>
+
+    <div>
+      <h2>Add New Person:</h2>
+      <input type="text" placeholder="Name" id="name" class="js-input-name" />
+      <input type="number" placeholder="Age" id="age" class="js-input-age" />
+      <button class="js-btn-save">Save</button>
+    </div>
+
+    <h3>People:</h3>
+    <ul class="js-people">
+      <!-- li -->
+      <li>Loading</li>
+    </ul>
   </body>
 </html>
